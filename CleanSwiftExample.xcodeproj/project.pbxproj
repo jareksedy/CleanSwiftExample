@@ -56,12 +56,36 @@
 			children = (
 				CADD46E6278024EB0051CE46 /* AppDelegate.swift */,
 				CADD46E8278024EB0051CE46 /* SceneDelegate.swift */,
-				CADD46EC278024EB0051CE46 /* Main.storyboard */,
-				CADD46EF278024EC0051CE46 /* Assets.xcassets */,
-				CADD46F1278024EC0051CE46 /* LaunchScreen.storyboard */,
-				CADD46F4278024EC0051CE46 /* Info.plist */,
+				CAED11D227808D5500133344 /* Configuration */,
+				CAED11D127808D4B00133344 /* Resources */,
+				CAED11D027808D3C00133344 /* Storyboards */,
 			);
 			path = CleanSwiftExample;
+			sourceTree = "<group>";
+		};
+		CAED11D027808D3C00133344 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CADD46EC278024EB0051CE46 /* Main.storyboard */,
+				CADD46F1278024EC0051CE46 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CAED11D127808D4B00133344 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CADD46EF278024EC0051CE46 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CAED11D227808D5500133344 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CADD46F4278024EC0051CE46 /* Info.plist */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +311,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4NK62H99X6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CleanSwiftExample/Info.plist;
+				INFOPLIST_FILE = CleanSwiftExample/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4NK62H99X6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CleanSwiftExample/Info.plist;
+				INFOPLIST_FILE = CleanSwiftExample/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
