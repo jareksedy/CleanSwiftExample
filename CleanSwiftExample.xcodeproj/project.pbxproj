@@ -13,6 +13,12 @@
 		CADD46F0278024EC0051CE46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADD46EF278024EC0051CE46 /* Assets.xcassets */; };
 		CADD46F3278024EC0051CE46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADD46F1278024EC0051CE46 /* LaunchScreen.storyboard */; };
 		CAED11E42780944200133344 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11E32780944200133344 /* Authenticator.swift */; };
+		CAED11E6278095B200133344 /* AuthScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11E5278095B200133344 /* AuthScreenModels.swift */; };
+		CAED11E82780966300133344 /* AuthScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11E72780966300133344 /* AuthScreenPresenter.swift */; };
+		CAED11EA2780967C00133344 /* AuthScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11E92780967C00133344 /* AuthScreenRouter.swift */; };
+		CAED11EC2780983E00133344 /* AuthScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11EB2780983E00133344 /* AuthScreenInteractor.swift */; };
+		CAED11EE27809A9E00133344 /* AuthScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11ED27809A9E00133344 /* AuthScreenViewController.swift */; };
+		CAED11F327809C5800133344 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11F227809C5800133344 /* HomeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		CADD46F2278024EC0051CE46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CADD46F4278024EC0051CE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAED11E32780944200133344 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		CAED11E5278095B200133344 /* AuthScreenModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenModels.swift; sourceTree = "<group>"; };
+		CAED11E72780966300133344 /* AuthScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenPresenter.swift; sourceTree = "<group>"; };
+		CAED11E92780967C00133344 /* AuthScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenRouter.swift; sourceTree = "<group>"; };
+		CAED11EB2780983E00133344 /* AuthScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenInteractor.swift; sourceTree = "<group>"; };
+		CAED11ED27809A9E00133344 /* AuthScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenViewController.swift; sourceTree = "<group>"; };
+		CAED11F227809C5800133344 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				CAED11E127808F7D00133344 /* AuthScreen */,
+				CAED11EF27809C1400133344 /* HomeScreen */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -103,6 +116,11 @@
 		CAED11E127808F7D00133344 /* AuthScreen */ = {
 			isa = PBXGroup;
 			children = (
+				CAED11E5278095B200133344 /* AuthScreenModels.swift */,
+				CAED11E92780967C00133344 /* AuthScreenRouter.swift */,
+				CAED11E72780966300133344 /* AuthScreenPresenter.swift */,
+				CAED11ED27809A9E00133344 /* AuthScreenViewController.swift */,
+				CAED11EB2780983E00133344 /* AuthScreenInteractor.swift */,
 			);
 			path = AuthScreen;
 			sourceTree = "<group>";
@@ -113,6 +131,14 @@
 				CAED11E32780944200133344 /* Authenticator.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		CAED11EF27809C1400133344 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CAED11F227809C5800133344 /* HomeScreenViewController.swift */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,9 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAED11EA2780967C00133344 /* AuthScreenRouter.swift in Sources */,
 				CADD46E7278024EB0051CE46 /* AppDelegate.swift in Sources */,
+				CAED11EE27809A9E00133344 /* AuthScreenViewController.swift in Sources */,
 				CADD46E9278024EB0051CE46 /* SceneDelegate.swift in Sources */,
 				CAED11E42780944200133344 /* Authenticator.swift in Sources */,
+				CAED11F327809C5800133344 /* HomeScreenViewController.swift in Sources */,
+				CAED11EC2780983E00133344 /* AuthScreenInteractor.swift in Sources */,
+				CAED11E6278095B200133344 /* AuthScreenModels.swift in Sources */,
+				CAED11E82780966300133344 /* AuthScreenPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Authenticator {
+final class Authenticator {
     private let passcodes = ["1234", "4359", "8888", "9761"]
     
     func authenticate(with passcode: String) -> Bool {
