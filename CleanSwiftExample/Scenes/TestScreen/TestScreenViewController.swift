@@ -41,9 +41,20 @@ class TestScreenViewController: UIViewController {
       // Указываем ссылку на Interactor для View Controller
       self.interactor = interactor
     }
+    
+    /// Делаем запрос к Interactor для получения данных
+    private func loadUserInfromation() {
+      // Создаем экземпляр запроса к Interactor с параметрами
+      let request = TestScreenModels.FetchUser.Request(userName: "Aleksey")
+
+      // Вызываем метод бизнес логики у Interactor'a
+      interactor?.fetchUser(request)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       loadUserInfromation()
     }
 }
 

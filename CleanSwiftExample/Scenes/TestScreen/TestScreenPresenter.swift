@@ -10,13 +10,15 @@ import Foundation
 protocol TestScreenPresentationLogic {
 
   /// Метод форматирования полученных данных с Interactor'a
-  func presentUser(_ response: HomeModels.FetchUser.Response)
+  func presentUser(_ response: TestScreenModels.FetchUser.Response)
 }
 
-final class TestScreenPresenter: TestScreenPresentationLogic {
+class TestScreenPresenter: TestScreenPresentationLogic {
 
   /// Ссылка на логику отображения View Controller'a
-  weak var viewController: TestScreenDisplayLogic?
+
+
+    var viewController: TestScreenDisplayLogic?
 
   func presentUser(_ response: TestScreenModels.FetchUser.Response) {
     // Для примера отформатируем номер телефона
