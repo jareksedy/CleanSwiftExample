@@ -8,9 +8,14 @@
 import Foundation
 
 final class Authenticator {
-    private let passcodes = ["1234", "4359", "8888", "9761"]
+    private let passcodesWithUserNames = [
+        "1234": "William Blake",
+        "4359": "Charles Bukowski",
+        "8848": "Stephen King",
+        "9766": "Howard Lovecraft"
+    ]
     
-    func authenticate(with passcode: String) -> Bool {
-        return passcodes.contains(passcode)
+    func authenticate(with passcode: String) -> (Bool, String?) {
+        return (passcodesWithUserNames[passcode] != nil, passcodesWithUserNames[passcode])
     }
 }

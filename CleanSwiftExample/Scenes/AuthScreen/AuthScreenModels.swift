@@ -15,10 +15,12 @@ enum AuthScreen {
         
         struct Response {
             var success: Bool
+            var userName: String?
         }
         
         struct ViewModel {
             var success: Bool
+            var userName: String?
         }
     }
 }

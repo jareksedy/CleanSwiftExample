@@ -13,7 +13,7 @@ protocol AuthScreenBusinessLogic {
 
 protocol AuthScreenDataStore {}
 
-class AuthScreenInteractor: AuthScreenBusinessLogic, AuthScreenDataPassing {
+class AuthScreenInteractor: AuthScreenBusinessLogic, AuthScreenDataStore {
     var dataStore: AuthScreenDataStore?
     var presenter: AuthScreenPresentationLogic?
     
@@ -21,12 +21,13 @@ class AuthScreenInteractor: AuthScreenBusinessLogic, AuthScreenDataPassing {
         guard let passcode = request.passcode else { return }
         
         let authenticator = Authenticator()
+        let authenticationResult = authenticator.authenticate(with: passcode)
         
-        if authenticator.authenticate(with: passcode) {
-            let response = AuthScreen.Auth.Response(success: true)
+        if authenticationResult.0 {
+            let response = AuthScreen.Auth.Response(success: true, userName: authenticationResult.1)
             presenter?.presentAuthenticate(response: response)
         } else {
-            let response = AuthScreen.Auth.Response(success: false)
+            let response = AuthScreen.Auth.Response(success: false, userName: nil)
             presenter?.presentAuthenticate(response: response)
         }
     }

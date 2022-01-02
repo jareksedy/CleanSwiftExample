@@ -31,7 +31,7 @@ class AuthScreenViewController: UIViewController, AuthScreenDisplayLogic {
         interactor.presenter = presenter
         presenter.viewController = viewController
         router.viewController = viewController
-        //router.dataStore = interactor
+        router.dataStore = interactor
     }
     
     func displayAuth(viewModel: AuthScreen.Auth.ViewModel) {
@@ -54,7 +54,6 @@ class AuthScreenViewController: UIViewController, AuthScreenDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         construct()
     }
 }

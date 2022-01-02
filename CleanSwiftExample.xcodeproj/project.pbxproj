@@ -19,6 +19,10 @@
 		CAED11EC2780983E00133344 /* AuthScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11EB2780983E00133344 /* AuthScreenInteractor.swift */; };
 		CAED11EE27809A9E00133344 /* AuthScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11ED27809A9E00133344 /* AuthScreenViewController.swift */; };
 		CAED11F327809C5800133344 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11F227809C5800133344 /* HomeScreenViewController.swift */; };
+		CAEE409327815BD4003ED253 /* HomeScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409227815BD4003ED253 /* HomeScreenModels.swift */; };
+		CAEE409527815C24003ED253 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409427815C24003ED253 /* HomeScreenRouter.swift */; };
+		CAEE409727815DC0003ED253 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409627815DC0003ED253 /* HomeScreenPresenter.swift */; };
+		CAEE409927815EB4003ED253 /* HomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409827815EB4003ED253 /* HomeScreenInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		CAED11EB2780983E00133344 /* AuthScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenInteractor.swift; sourceTree = "<group>"; };
 		CAED11ED27809A9E00133344 /* AuthScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenViewController.swift; sourceTree = "<group>"; };
 		CAED11F227809C5800133344 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		CAEE409227815BD4003ED253 /* HomeScreenModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenModels.swift; sourceTree = "<group>"; };
+		CAEE409427815C24003ED253 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
+		CAEE409627815DC0003ED253 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
+		CAEE409827815EB4003ED253 /* HomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +144,11 @@
 		CAED11EF27809C1400133344 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				CAEE409227815BD4003ED253 /* HomeScreenModels.swift */,
+				CAEE409427815C24003ED253 /* HomeScreenRouter.swift */,
+				CAEE409627815DC0003ED253 /* HomeScreenPresenter.swift */,
 				CAED11F227809C5800133344 /* HomeScreenViewController.swift */,
+				CAEE409827815EB4003ED253 /* HomeScreenInteractor.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -213,13 +225,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAED11EA2780967C00133344 /* AuthScreenRouter.swift in Sources */,
+				CAEE409727815DC0003ED253 /* HomeScreenPresenter.swift in Sources */,
+				CAEE409527815C24003ED253 /* HomeScreenRouter.swift in Sources */,
 				CADD46E7278024EB0051CE46 /* AppDelegate.swift in Sources */,
 				CAED11EE27809A9E00133344 /* AuthScreenViewController.swift in Sources */,
 				CADD46E9278024EB0051CE46 /* SceneDelegate.swift in Sources */,
+				CAEE409327815BD4003ED253 /* HomeScreenModels.swift in Sources */,
 				CAED11E42780944200133344 /* Authenticator.swift in Sources */,
 				CAED11F327809C5800133344 /* HomeScreenViewController.swift in Sources */,
 				CAED11EC2780983E00133344 /* AuthScreenInteractor.swift in Sources */,
 				CAED11E6278095B200133344 /* AuthScreenModels.swift in Sources */,
+				CAEE409927815EB4003ED253 /* HomeScreenInteractor.swift in Sources */,
 				CAED11E82780966300133344 /* AuthScreenPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
