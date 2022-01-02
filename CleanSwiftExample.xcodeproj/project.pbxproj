@@ -23,6 +23,10 @@
 		CAEE409527815C24003ED253 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409427815C24003ED253 /* HomeScreenRouter.swift */; };
 		CAEE409727815DC0003ED253 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409627815DC0003ED253 /* HomeScreenPresenter.swift */; };
 		CAEE409927815EB4003ED253 /* HomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409827815EB4003ED253 /* HomeScreenInteractor.swift */; };
+		CAEE409C27817170003ED253 /* TestScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409B27817170003ED253 /* TestScreenViewController.swift */; };
+		CAEE409E2781718F003ED253 /* TestScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409D2781718F003ED253 /* TestScreenModels.swift */; };
+		CAEE40A0278171D8003ED253 /* TestScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409F278171D8003ED253 /* TestScreenInteractor.swift */; };
+		CAEE40A227817247003ED253 /* TestScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE40A127817247003ED253 /* TestScreenPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		CAEE409427815C24003ED253 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
 		CAEE409627815DC0003ED253 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
 		CAEE409827815EB4003ED253 /* HomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInteractor.swift; sourceTree = "<group>"; };
+		CAEE409B27817170003ED253 /* TestScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenViewController.swift; sourceTree = "<group>"; };
+		CAEE409D2781718F003ED253 /* TestScreenModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenModels.swift; sourceTree = "<group>"; };
+		CAEE409F278171D8003ED253 /* TestScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenInteractor.swift; sourceTree = "<group>"; };
+		CAEE40A127817247003ED253 /* TestScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,7 @@
 		CAED11D327808DA600133344 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CAEE409A27817157003ED253 /* TestScreen */,
 				CAED11E127808F7D00133344 /* AuthScreen */,
 				CAED11EF27809C1400133344 /* HomeScreen */,
 			);
@@ -151,6 +160,17 @@
 				CAEE409827815EB4003ED253 /* HomeScreenInteractor.swift */,
 			);
 			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		CAEE409A27817157003ED253 /* TestScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CAEE409D2781718F003ED253 /* TestScreenModels.swift */,
+				CAEE409F278171D8003ED253 /* TestScreenInteractor.swift */,
+				CAEE409B27817170003ED253 /* TestScreenViewController.swift */,
+				CAEE40A127817247003ED253 /* TestScreenPresenter.swift */,
+			);
+			path = TestScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAEE40A0278171D8003ED253 /* TestScreenInteractor.swift in Sources */,
+				CAEE409C27817170003ED253 /* TestScreenViewController.swift in Sources */,
+				CAEE40A227817247003ED253 /* TestScreenPresenter.swift in Sources */,
 				CAED11EA2780967C00133344 /* AuthScreenRouter.swift in Sources */,
 				CAEE409727815DC0003ED253 /* HomeScreenPresenter.swift in Sources */,
 				CAEE409527815C24003ED253 /* HomeScreenRouter.swift in Sources */,
@@ -236,6 +259,7 @@
 				CAED11EC2780983E00133344 /* AuthScreenInteractor.swift in Sources */,
 				CAED11E6278095B200133344 /* AuthScreenModels.swift in Sources */,
 				CAEE409927815EB4003ED253 /* HomeScreenInteractor.swift in Sources */,
+				CAEE409E2781718F003ED253 /* TestScreenModels.swift in Sources */,
 				CAED11E82780966300133344 /* AuthScreenPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,6 +16,7 @@ enum HomeScreen {
         }
         
         struct ViewModel {
+            var userName: String?
         }
     }
 }

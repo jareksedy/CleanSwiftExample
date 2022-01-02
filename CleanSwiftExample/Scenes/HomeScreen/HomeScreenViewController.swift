@@ -33,6 +33,7 @@ class HomeScreenViewController: UIViewController, HomeScreenDisplayLogic {
     }
     
     func displayGreeting(viewModel: HomeScreen.Home.ViewModel) {
+        welcomeLabel.text = "Welcome\n \(viewModel.userName ?? "Unknown")..."
     }
     
     override func viewDidLoad() {

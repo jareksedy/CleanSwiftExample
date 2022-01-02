@@ -29,5 +29,7 @@ class AuthScreenRouter: AuthScreenRoutingLogic, AuthScreenDataPassing {
         passDataToHome(source: dataStore!, destination: &destinationDataStore)
     }
     
-    func passDataToHome(source: AuthScreenDataStore, destination: inout HomeScreenDataStore) {}
+    func passDataToHome(source: AuthScreenDataStore, destination: inout HomeScreenDataStore) {
+        
+    }
 }

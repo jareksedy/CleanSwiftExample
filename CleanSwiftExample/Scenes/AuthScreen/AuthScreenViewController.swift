@@ -35,11 +35,7 @@ class AuthScreenViewController: UIViewController, AuthScreenDisplayLogic {
     }
     
     func displayAuth(viewModel: AuthScreen.Auth.ViewModel) {
-        if viewModel.success {
-            performSegue(withIdentifier: "toHomeScreen", sender: nil)
-        } else {
-            passcodeTextField.text = nil
-        }
+        if viewModel.success { performSegue(withIdentifier: "toHomeScreen", sender: nil) } else { passcodeTextField.text = nil }
     }
     
     func authenticate() {
