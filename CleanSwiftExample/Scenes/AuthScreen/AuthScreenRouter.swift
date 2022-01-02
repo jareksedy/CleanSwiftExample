@@ -24,6 +24,10 @@ class AuthScreenRouter: AuthScreenRoutingLogic, AuthScreenDataPassing {
         guard let segue = segue else { return }
         
         let destination = segue.destination as! HomeScreenViewController
-        //var destinationDataStore = destination.router!.dataStore!
+        var destinationDataStore = destination.router!.dataStore!
+        
+        passDataToHome(source: dataStore!, destination: &destinationDataStore)
     }
+    
+    func passDataToHome(source: AuthScreenDataStore, destination: inout HomeScreenDataStore) {}
 }

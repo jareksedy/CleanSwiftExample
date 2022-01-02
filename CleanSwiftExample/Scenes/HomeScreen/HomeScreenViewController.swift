@@ -11,13 +11,32 @@ protocol HomeScreenDisplayLogic {
     func displayGreeting(viewModel: HomeScreen.Home.ViewModel)
 }
 
-class HomeScreenViewController: UIViewController {
+class HomeScreenViewController: UIViewController, HomeScreenDisplayLogic {
     @IBOutlet weak var welcomeLabel: UILabel!
+    
+    var interactor: HomeScreenBusinessLogic?
+    var router: (HomeScreenRoutingLogic & HomeScreenDataPassing)?
+    
+    private func construct() {
+        let viewController = self
+        let interactor = HomeScreenInteractor()
+        let presenter = HomeScreenPresenter()
+        let router = HomeScreenRouter()
+        
+        viewController.interactor = interactor
+        viewController.router = router
+        
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+        router.viewController = viewController
+        router.dataStore = interactor
+    }
     
     func displayGreeting(viewModel: HomeScreen.Home.ViewModel) {
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        construct()
     }
 }
