@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5zb-UC-0l8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -59,7 +59,7 @@
                         <outlet property="passcodeCaptionLabel" destination="4hP-YV-jhj" id="1fu-QP-2Ln"/>
                         <outlet property="passcodeTextField" destination="aIz-Vh-OyQ" id="nfs-pJ-8t4"/>
                         <outlet property="proceedButton" destination="BJ9-4c-NY8" id="5tm-vn-m0q"/>
-                        <segue destination="nme-O7-Kvm" kind="show" identifier="toHomeScreen" id="t1J-fl-Cfb"/>
+                        <segue destination="nme-O7-Kvm" kind="show" identifier="HomeScreen" id="t1J-fl-Cfb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

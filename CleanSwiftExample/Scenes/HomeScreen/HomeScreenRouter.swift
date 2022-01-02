@@ -16,12 +16,10 @@ protocol HomeScreenDataPassing {
     var dataStore: HomeScreenDataStore? { get }
 }
 
-class HomeScreenRouter: HomeScreenRoutingLogic, HomeScreenDataPassing {
+class HomeScreenRouter: NSObject, HomeScreenRoutingLogic, HomeScreenDataPassing {
     var dataStore: HomeScreenDataStore?
-    var viewController: HomeScreenViewController?
-    
+    weak var viewController: HomeScreenViewController?
     
     func routeToAuthScreen(segue: UIStoryboardSegue?) {
-        
     }
 }

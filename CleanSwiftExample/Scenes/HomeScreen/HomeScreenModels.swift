@@ -13,6 +13,7 @@ enum HomeScreen {
         }
         
         struct Response {
+            var userName: String?
         }
         
         struct ViewModel {

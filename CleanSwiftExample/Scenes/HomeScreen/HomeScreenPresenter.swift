@@ -15,7 +15,7 @@ class HomeScreenPresenter: HomeScreenPresentationLogic {
     weak var viewController: HomeScreenViewController?
     
     func presentGreeting(response: HomeScreen.Home.Response) {
-        let viewModel = HomeScreen.Home.ViewModel()
+        let viewModel = HomeScreen.Home.ViewModel(userName: response.userName)
         viewController?.displayGreeting(viewModel: viewModel)
     }
 }

@@ -8,28 +8,37 @@
 import Foundation
 import UIKit
 
-protocol AuthScreenRoutingLogic {
-    func routeToHome(segue: UIStoryboardSegue?)
+@objc protocol AuthScreenRoutingLogic {
+    func routeToHomeScreen(segue: UIStoryboardSegue?)
 }
 
 protocol AuthScreenDataPassing {
     var dataStore: AuthScreenDataStore? { get }
 }
 
-class AuthScreenRouter: AuthScreenRoutingLogic, AuthScreenDataPassing {
+class AuthScreenRouter: NSObject, AuthScreenRoutingLogic, AuthScreenDataPassing {
+    weak var viewController: AuthScreenViewController?
     var dataStore: AuthScreenDataStore?
-    var viewController: AuthScreenViewController?
     
-    func routeToHome(segue: UIStoryboardSegue?) {
-        guard let segue = segue else { return }
-        
-        let destination = segue.destination as! HomeScreenViewController
-        var destinationDataStore = destination.router!.dataStore!
-        
-        passDataToHome(source: dataStore!, destination: &destinationDataStore)
+    func routeToHomeScreen(segue: UIStoryboardSegue?) {
+        if let segue = segue {
+            let destination = segue.destination as! HomeScreenViewController
+            var destinationDataStore = destination.router!.dataStore!
+            
+            passDataToHomeScreen(source: dataStore!, destination: &destinationDataStore)
+        } else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let destination = storyboard.instantiateViewController(withIdentifier: "HomeScreenViewController") as! HomeScreenViewController
+            var destinationDataStore = destination.router!.dataStore!
+            
+            passDataToHomeScreen(source: dataStore!, destination: &destinationDataStore)
+            navigateToHomeScreen(source: viewController!, destination: destination)
+        }
     }
     
-    func passDataToHome(source: AuthScreenDataStore, destination: inout HomeScreenDataStore) {
-        
+    func passDataToHomeScreen(source: AuthScreenDataStore, destination: inout HomeScreenDataStore) {
+        destination.userName = source.userName
     }
+    
+    func navigateToHomeScreen(source: AuthScreenViewController, destination: HomeScreenViewController) {}
 }

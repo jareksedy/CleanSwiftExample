@@ -17,7 +17,7 @@ class AuthScreenViewController: UIViewController, AuthScreenDisplayLogic {
     @IBOutlet weak var proceedButton: UIButton!
     
     var interactor: AuthScreenBusinessLogic?
-    var router: (AuthScreenRoutingLogic & AuthScreenDataPassing)?
+    var router: (NSObjectProtocol & AuthScreenRoutingLogic & AuthScreenDataPassing)?
     
     private func construct() {
         let viewController = self
@@ -35,7 +35,7 @@ class AuthScreenViewController: UIViewController, AuthScreenDisplayLogic {
     }
     
     func displayAuth(viewModel: AuthScreen.Auth.ViewModel) {
-        if viewModel.success { performSegue(withIdentifier: "toHomeScreen", sender: nil) } else { passcodeTextField.text = nil }
+        if viewModel.success { performSegue(withIdentifier: "HomeScreen", sender: nil) } else { passcodeTextField.text = nil }
     }
     
     func authenticate() {
@@ -51,5 +51,24 @@ class AuthScreenViewController: UIViewController, AuthScreenDisplayLogic {
     override func viewDidLoad() {
         super.viewDidLoad()
         construct()
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        construct()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        construct()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let scene = segue.identifier {
+            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
+            if let router = router, router.responds(to: selector) {
+                router.perform(selector, with: segue)
+            }
+        }
     }
 }

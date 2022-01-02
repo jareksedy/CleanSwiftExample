@@ -15,7 +15,7 @@ class HomeScreenViewController: UIViewController, HomeScreenDisplayLogic {
     @IBOutlet weak var welcomeLabel: UILabel!
     
     var interactor: HomeScreenBusinessLogic?
-    var router: (HomeScreenRoutingLogic & HomeScreenDataPassing)?
+    var router: (NSObjectProtocol & HomeScreenRoutingLogic & HomeScreenDataPassing)?
     
     private func construct() {
         let viewController = self
@@ -33,11 +33,27 @@ class HomeScreenViewController: UIViewController, HomeScreenDisplayLogic {
     }
     
     func displayGreeting(viewModel: HomeScreen.Home.ViewModel) {
-        welcomeLabel.text = "Welcome\n \(viewModel.userName ?? "Unknown")..."
+        welcomeLabel.text = "Welcome \(viewModel.userName ?? "Unknown")..."
+    }
+    
+    func fetchUserName() {
+        interactor?.fetchUserName()
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
+    {
+      super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+      construct()
+    }
+    
+    required init?(coder aDecoder: NSCoder)
+    {
+      super.init(coder: aDecoder)
+      construct()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        construct()
+        fetchUserName()
     }
 }
