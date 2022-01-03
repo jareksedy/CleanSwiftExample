@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CADBB0172782973D008D05B7 /* TestTemplatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBB0112782973D008D05B7 /* TestTemplatePresenter.swift */; };
-		CADBB0182782973D008D05B7 /* TestTemplateWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBB0122782973D008D05B7 /* TestTemplateWorker.swift */; };
-		CADBB0192782973D008D05B7 /* TestTemplateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBB0132782973D008D05B7 /* TestTemplateRouter.swift */; };
-		CADBB01A2782973D008D05B7 /* TestTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBB0142782973D008D05B7 /* TestTemplateViewController.swift */; };
-		CADBB01B2782973D008D05B7 /* TestTemplateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBB0152782973D008D05B7 /* TestTemplateInteractor.swift */; };
-		CADBB01C2782973D008D05B7 /* TestTemplateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBB0162782973D008D05B7 /* TestTemplateModel.swift */; };
 		CADD46E7278024EB0051CE46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD46E6278024EB0051CE46 /* AppDelegate.swift */; };
 		CADD46E9278024EB0051CE46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD46E8278024EB0051CE46 /* SceneDelegate.swift */; };
 		CADD46EE278024EB0051CE46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADD46EC278024EB0051CE46 /* Main.storyboard */; };
 		CADD46F0278024EC0051CE46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADD46EF278024EC0051CE46 /* Assets.xcassets */; };
 		CADD46F3278024EC0051CE46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADD46F1278024EC0051CE46 /* LaunchScreen.storyboard */; };
+		CADDE7B927833BB400E680AC /* NameInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDE7B327833BB400E680AC /* NameInputPresenter.swift */; };
+		CADDE7BB27833BB400E680AC /* NameInputRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDE7B527833BB400E680AC /* NameInputRouter.swift */; };
+		CADDE7BC27833BB400E680AC /* NameInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDE7B627833BB400E680AC /* NameInputViewController.swift */; };
+		CADDE7BD27833BB400E680AC /* NameInputInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDE7B727833BB400E680AC /* NameInputInteractor.swift */; };
+		CADDE7BE27833BB400E680AC /* NameInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDE7B827833BB400E680AC /* NameInputModel.swift */; };
+		CADDE7C627833D2300E680AC /* GreetingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDE7C027833D2300E680AC /* GreetingPresenter.swift */; };
+		CADDE7C827833D2300E680AC /* GreetingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDE7C227833D2300E680AC /* GreetingRouter.swift */; };
+		CADDE7C927833D2300E680AC /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDE7C327833D2300E680AC /* GreetingViewController.swift */; };
+		CADDE7CA27833D2300E680AC /* GreetingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDE7C427833D2300E680AC /* GreetingInteractor.swift */; };
+		CADDE7CB27833D2300E680AC /* GreetingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADDE7C527833D2300E680AC /* GreetingModel.swift */; };
 		CAED11E42780944200133344 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11E32780944200133344 /* Authenticator.swift */; };
 		CAED11E6278095B200133344 /* AuthScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11E5278095B200133344 /* AuthScreenModels.swift */; };
 		CAED11E82780966300133344 /* AuthScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED11E72780966300133344 /* AuthScreenPresenter.swift */; };
@@ -29,19 +33,9 @@
 		CAEE409527815C24003ED253 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409427815C24003ED253 /* HomeScreenRouter.swift */; };
 		CAEE409727815DC0003ED253 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409627815DC0003ED253 /* HomeScreenPresenter.swift */; };
 		CAEE409927815EB4003ED253 /* HomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409827815EB4003ED253 /* HomeScreenInteractor.swift */; };
-		CAEE409C27817170003ED253 /* TestScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409B27817170003ED253 /* TestScreenViewController.swift */; };
-		CAEE409E2781718F003ED253 /* TestScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409D2781718F003ED253 /* TestScreenModels.swift */; };
-		CAEE40A0278171D8003ED253 /* TestScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE409F278171D8003ED253 /* TestScreenInteractor.swift */; };
-		CAEE40A227817247003ED253 /* TestScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE40A127817247003ED253 /* TestScreenPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CADBB0112782973D008D05B7 /* TestTemplatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplatePresenter.swift; sourceTree = "<group>"; };
-		CADBB0122782973D008D05B7 /* TestTemplateWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplateWorker.swift; sourceTree = "<group>"; };
-		CADBB0132782973D008D05B7 /* TestTemplateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplateRouter.swift; sourceTree = "<group>"; };
-		CADBB0142782973D008D05B7 /* TestTemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplateViewController.swift; sourceTree = "<group>"; };
-		CADBB0152782973D008D05B7 /* TestTemplateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplateInteractor.swift; sourceTree = "<group>"; };
-		CADBB0162782973D008D05B7 /* TestTemplateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplateModel.swift; sourceTree = "<group>"; };
 		CADD46E3278024EB0051CE46 /* CleanSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADD46E6278024EB0051CE46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CADD46E8278024EB0051CE46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +43,16 @@
 		CADD46EF278024EC0051CE46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CADD46F2278024EC0051CE46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CADD46F4278024EC0051CE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CADDE7B327833BB400E680AC /* NameInputPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputPresenter.swift; sourceTree = "<group>"; };
+		CADDE7B527833BB400E680AC /* NameInputRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputRouter.swift; sourceTree = "<group>"; };
+		CADDE7B627833BB400E680AC /* NameInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputViewController.swift; sourceTree = "<group>"; };
+		CADDE7B727833BB400E680AC /* NameInputInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputInteractor.swift; sourceTree = "<group>"; };
+		CADDE7B827833BB400E680AC /* NameInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputModel.swift; sourceTree = "<group>"; };
+		CADDE7C027833D2300E680AC /* GreetingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingPresenter.swift; sourceTree = "<group>"; };
+		CADDE7C227833D2300E680AC /* GreetingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingRouter.swift; sourceTree = "<group>"; };
+		CADDE7C327833D2300E680AC /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		CADDE7C427833D2300E680AC /* GreetingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingInteractor.swift; sourceTree = "<group>"; };
+		CADDE7C527833D2300E680AC /* GreetingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingModel.swift; sourceTree = "<group>"; };
 		CAED11E32780944200133344 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
 		CAED11E5278095B200133344 /* AuthScreenModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenModels.swift; sourceTree = "<group>"; };
 		CAED11E72780966300133344 /* AuthScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenPresenter.swift; sourceTree = "<group>"; };
@@ -60,10 +64,6 @@
 		CAEE409427815C24003ED253 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
 		CAEE409627815DC0003ED253 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
 		CAEE409827815EB4003ED253 /* HomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInteractor.swift; sourceTree = "<group>"; };
-		CAEE409B27817170003ED253 /* TestScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenViewController.swift; sourceTree = "<group>"; };
-		CAEE409D2781718F003ED253 /* TestScreenModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenModels.swift; sourceTree = "<group>"; };
-		CAEE409F278171D8003ED253 /* TestScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenInteractor.swift; sourceTree = "<group>"; };
-		CAEE40A127817247003ED253 /* TestScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,17 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CADBB01027829712008D05B7 /* TestTemplates */ = {
+		CA84310A2783343B000FAE14 /* NameInput */ = {
 			isa = PBXGroup;
 			children = (
-				CADBB0112782973D008D05B7 /* TestTemplatePresenter.swift */,
-				CADBB0122782973D008D05B7 /* TestTemplateWorker.swift */,
-				CADBB0132782973D008D05B7 /* TestTemplateRouter.swift */,
-				CADBB0142782973D008D05B7 /* TestTemplateViewController.swift */,
-				CADBB0152782973D008D05B7 /* TestTemplateInteractor.swift */,
-				CADBB0162782973D008D05B7 /* TestTemplateModel.swift */,
+				CADDE7B327833BB400E680AC /* NameInputPresenter.swift */,
+				CADDE7B527833BB400E680AC /* NameInputRouter.swift */,
+				CADDE7B627833BB400E680AC /* NameInputViewController.swift */,
+				CADDE7B727833BB400E680AC /* NameInputInteractor.swift */,
+				CADDE7B827833BB400E680AC /* NameInputModel.swift */,
 			);
-			path = TestTemplates;
+			path = NameInput;
 			sourceTree = "<group>";
 		};
 		CADD46DA278024EB0051CE46 = {
@@ -120,6 +119,18 @@
 			path = CleanSwiftExample;
 			sourceTree = "<group>";
 		};
+		CADDE7BF27833D0600E680AC /* Greeting */ = {
+			isa = PBXGroup;
+			children = (
+				CADDE7C027833D2300E680AC /* GreetingPresenter.swift */,
+				CADDE7C227833D2300E680AC /* GreetingRouter.swift */,
+				CADDE7C327833D2300E680AC /* GreetingViewController.swift */,
+				CADDE7C427833D2300E680AC /* GreetingInteractor.swift */,
+				CADDE7C527833D2300E680AC /* GreetingModel.swift */,
+			);
+			path = Greeting;
+			sourceTree = "<group>";
+		};
 		CAED11D027808D3C00133344 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,8 +159,8 @@
 		CAED11D327808DA600133344 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				CADBB01027829712008D05B7 /* TestTemplates */,
-				CAEE409A27817157003ED253 /* TestScreen */,
+				CA84310A2783343B000FAE14 /* NameInput */,
+				CADDE7BF27833D0600E680AC /* Greeting */,
 				CAED11E127808F7D00133344 /* AuthScreen */,
 				CAED11EF27809C1400133344 /* HomeScreen */,
 			);
@@ -186,17 +197,6 @@
 				CAEE409827815EB4003ED253 /* HomeScreenInteractor.swift */,
 			);
 			path = HomeScreen;
-			sourceTree = "<group>";
-		};
-		CAEE409A27817157003ED253 /* TestScreen */ = {
-			isa = PBXGroup;
-			children = (
-				CAEE409D2781718F003ED253 /* TestScreenModels.swift */,
-				CAEE409F278171D8003ED253 /* TestScreenInteractor.swift */,
-				CAEE409B27817170003ED253 /* TestScreenViewController.swift */,
-				CAEE40A127817247003ED253 /* TestScreenPresenter.swift */,
-			);
-			path = TestScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,28 +270,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAEE40A0278171D8003ED253 /* TestScreenInteractor.swift in Sources */,
-				CAEE409C27817170003ED253 /* TestScreenViewController.swift in Sources */,
-				CAEE40A227817247003ED253 /* TestScreenPresenter.swift in Sources */,
+				CADDE7CA27833D2300E680AC /* GreetingInteractor.swift in Sources */,
+				CADDE7BD27833BB400E680AC /* NameInputInteractor.swift in Sources */,
 				CAED11EA2780967C00133344 /* AuthScreenRouter.swift in Sources */,
 				CAEE409727815DC0003ED253 /* HomeScreenPresenter.swift in Sources */,
+				CADDE7BB27833BB400E680AC /* NameInputRouter.swift in Sources */,
+				CADDE7BC27833BB400E680AC /* NameInputViewController.swift in Sources */,
 				CAEE409527815C24003ED253 /* HomeScreenRouter.swift in Sources */,
 				CADD46E7278024EB0051CE46 /* AppDelegate.swift in Sources */,
+				CADDE7B927833BB400E680AC /* NameInputPresenter.swift in Sources */,
 				CAED11EE27809A9E00133344 /* AuthScreenViewController.swift in Sources */,
-				CADBB0172782973D008D05B7 /* TestTemplatePresenter.swift in Sources */,
+				CADDE7C627833D2300E680AC /* GreetingPresenter.swift in Sources */,
 				CADD46E9278024EB0051CE46 /* SceneDelegate.swift in Sources */,
+				CADDE7CB27833D2300E680AC /* GreetingModel.swift in Sources */,
 				CAEE409327815BD4003ED253 /* HomeScreenModels.swift in Sources */,
 				CAED11E42780944200133344 /* Authenticator.swift in Sources */,
-				CADBB0192782973D008D05B7 /* TestTemplateRouter.swift in Sources */,
-				CADBB01C2782973D008D05B7 /* TestTemplateModel.swift in Sources */,
+				CADDE7C927833D2300E680AC /* GreetingViewController.swift in Sources */,
+				CADDE7BE27833BB400E680AC /* NameInputModel.swift in Sources */,
 				CAED11F327809C5800133344 /* HomeScreenViewController.swift in Sources */,
-				CADBB01B2782973D008D05B7 /* TestTemplateInteractor.swift in Sources */,
 				CAED11EC2780983E00133344 /* AuthScreenInteractor.swift in Sources */,
 				CAED11E6278095B200133344 /* AuthScreenModels.swift in Sources */,
 				CAEE409927815EB4003ED253 /* HomeScreenInteractor.swift in Sources */,
-				CADBB0182782973D008D05B7 /* TestTemplateWorker.swift in Sources */,
-				CAEE409E2781718F003ED253 /* TestScreenModels.swift in Sources */,
-				CADBB01A2782973D008D05B7 /* TestTemplateViewController.swift in Sources */,
+				CADDE7C827833D2300E680AC /* GreetingRouter.swift in Sources */,
 				CAED11E82780966300133344 /* AuthScreenPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
