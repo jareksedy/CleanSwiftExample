@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CADBB0172782973D008D05B7 /* TestTemplatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBB0112782973D008D05B7 /* TestTemplatePresenter.swift */; };
+		CADBB0182782973D008D05B7 /* TestTemplateWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBB0122782973D008D05B7 /* TestTemplateWorker.swift */; };
+		CADBB0192782973D008D05B7 /* TestTemplateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBB0132782973D008D05B7 /* TestTemplateRouter.swift */; };
+		CADBB01A2782973D008D05B7 /* TestTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBB0142782973D008D05B7 /* TestTemplateViewController.swift */; };
+		CADBB01B2782973D008D05B7 /* TestTemplateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBB0152782973D008D05B7 /* TestTemplateInteractor.swift */; };
+		CADBB01C2782973D008D05B7 /* TestTemplateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBB0162782973D008D05B7 /* TestTemplateModel.swift */; };
 		CADD46E7278024EB0051CE46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD46E6278024EB0051CE46 /* AppDelegate.swift */; };
 		CADD46E9278024EB0051CE46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD46E8278024EB0051CE46 /* SceneDelegate.swift */; };
 		CADD46EE278024EB0051CE46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADD46EC278024EB0051CE46 /* Main.storyboard */; };
@@ -30,6 +36,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CADBB0112782973D008D05B7 /* TestTemplatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplatePresenter.swift; sourceTree = "<group>"; };
+		CADBB0122782973D008D05B7 /* TestTemplateWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplateWorker.swift; sourceTree = "<group>"; };
+		CADBB0132782973D008D05B7 /* TestTemplateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplateRouter.swift; sourceTree = "<group>"; };
+		CADBB0142782973D008D05B7 /* TestTemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplateViewController.swift; sourceTree = "<group>"; };
+		CADBB0152782973D008D05B7 /* TestTemplateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplateInteractor.swift; sourceTree = "<group>"; };
+		CADBB0162782973D008D05B7 /* TestTemplateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTemplateModel.swift; sourceTree = "<group>"; };
 		CADD46E3278024EB0051CE46 /* CleanSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADD46E6278024EB0051CE46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CADD46E8278024EB0051CE46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +77,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CADBB01027829712008D05B7 /* TestTemplates */ = {
+			isa = PBXGroup;
+			children = (
+				CADBB0112782973D008D05B7 /* TestTemplatePresenter.swift */,
+				CADBB0122782973D008D05B7 /* TestTemplateWorker.swift */,
+				CADBB0132782973D008D05B7 /* TestTemplateRouter.swift */,
+				CADBB0142782973D008D05B7 /* TestTemplateViewController.swift */,
+				CADBB0152782973D008D05B7 /* TestTemplateInteractor.swift */,
+				CADBB0162782973D008D05B7 /* TestTemplateModel.swift */,
+			);
+			path = TestTemplates;
+			sourceTree = "<group>";
+		};
 		CADD46DA278024EB0051CE46 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +148,7 @@
 		CAED11D327808DA600133344 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CADBB01027829712008D05B7 /* TestTemplates */,
 				CAEE409A27817157003ED253 /* TestScreen */,
 				CAED11E127808F7D00133344 /* AuthScreen */,
 				CAED11EF27809C1400133344 /* HomeScreen */,
@@ -252,14 +278,20 @@
 				CAEE409527815C24003ED253 /* HomeScreenRouter.swift in Sources */,
 				CADD46E7278024EB0051CE46 /* AppDelegate.swift in Sources */,
 				CAED11EE27809A9E00133344 /* AuthScreenViewController.swift in Sources */,
+				CADBB0172782973D008D05B7 /* TestTemplatePresenter.swift in Sources */,
 				CADD46E9278024EB0051CE46 /* SceneDelegate.swift in Sources */,
 				CAEE409327815BD4003ED253 /* HomeScreenModels.swift in Sources */,
 				CAED11E42780944200133344 /* Authenticator.swift in Sources */,
+				CADBB0192782973D008D05B7 /* TestTemplateRouter.swift in Sources */,
+				CADBB01C2782973D008D05B7 /* TestTemplateModel.swift in Sources */,
 				CAED11F327809C5800133344 /* HomeScreenViewController.swift in Sources */,
+				CADBB01B2782973D008D05B7 /* TestTemplateInteractor.swift in Sources */,
 				CAED11EC2780983E00133344 /* AuthScreenInteractor.swift in Sources */,
 				CAED11E6278095B200133344 /* AuthScreenModels.swift in Sources */,
 				CAEE409927815EB4003ED253 /* HomeScreenInteractor.swift in Sources */,
+				CADBB0182782973D008D05B7 /* TestTemplateWorker.swift in Sources */,
 				CAEE409E2781718F003ED253 /* TestScreenModels.swift in Sources */,
+				CADBB01A2782973D008D05B7 /* TestTemplateViewController.swift in Sources */,
 				CAED11E82780966300133344 /* AuthScreenPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
